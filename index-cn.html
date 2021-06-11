@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sounds of Chinatown</title>
+	<meta charset="utf-8"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Quicksand&display=swap" rel="stylesheet">
+	<style>
+		html{
+			font-family: 'Quicksand', sans-serif;
+			overflow: none;
+		}
+
+		body{
+			padding: 4vh 0 0 2vw;
+		}
+
+		h1{
+			font-family: 'M PLUS Rounded 1c', sans-serif;
+			font-size: 1.7em;
+		}
+
+		h2{
+			font-size: 1.5em;
+		}
+
+		h3{
+			font-size: 1.4em;
+		}
+
+		.dark-purple{
+			color: #58108B;
+		}
+
+		.light-purple{
+			color: #814EA7;
+		}
+
+		.upper{
+			text-transform: uppercase;
+		}
+
+		.container{
+		  display: flex;
+		}
+
+		.quote-text {
+	        font-style: italic; 
+	        color: #e5554f; 
+	        font-size: 1.2em; 
+	        text-align: center; 
+	        margin-bottom: 20px;
+    	}
+
+    	.header1{
+    		text-align: center
+    	}
+
+    	input[type=text] {
+		  width: 20%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 43%;
+		  background-color: #580f8b;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/logos.png" width=25%">
+
+	<div class="container">
+		<div class="left">
+			<h2 class="light-purple upper">
+				在日落公园有没有哪些地方你觉得...
+
+			</h2>
+			 <h1 class="dark-purple upper">
+			 	常常听到噪音?
+			 	<br>
+			 	有空气污染的顾虑？
+			</h1>
+			<h3>
+				纽约大学医学院亚裔健康研究中心正在开展一项有关日落公园的​​噪音和空气污染的研究项目。我们想听听您对这里的噪音和空气质量有什么顾虑。如果您有兴趣与我们合作，请告诉我们日落公园哪里值得关注和需要改善的地方以及污染程度。一起来改善您的社区吧！
+			</h3>
+		</div>
+
+		<div class="right">
+			<img src="img/components.png" width="90%">
+		</div>
+	</div>
+
+	<div class="main">
+        
+        <h1 class="header1">Noise and Air Quality in Sunset Park, Brooklyn </h1>
+        <p class="quote-text">THIS IS A HOLDING PAGE FOR CIEH PILOT INFORMATION IN CHINESE</p>
+        
+        
+    </div>
+    
+    <form action="sunsetpark-en.php" method="post">
+        <label for="issues">What are the noise and air quality issues that concern you most in Sunset Park?</label><br />
+        <textarea name="issues" id="issues" rows="7" cols="80"></textarea><br />
+        <label for="location">In which streets do you experience them most often or most severely?</label><br /> 
+        <textarea name="location" id="location" rows="7" cols="70"></textarea><br />
+
+        <label for="name">Name</label> <br /><input type="text" name="name"><br />
+        <label for="email">E-mail</label> <br /><input type="text" name="email"><br />
+        <input type="hidden" name="formSent" value="formSent">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
